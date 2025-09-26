@@ -1,8 +1,7 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import Home from './components/Home.vue'
-// import Interpolation from './components/Interpolation.vue'
 import Todo from './components/Todo.vue'
+import ParentComponent from './modules/demo/ParentComponent.vue';
+// import ClassBindingDemo from './modules/demo/ClassBinding.vue';
 </script>
 
 <template>
@@ -20,11 +19,18 @@ import Todo from './components/Todo.vue'
   <Interpolation /> -->
   <!-- <Todo /> -->
 
+  <!-- <router-link to="/login">Login</router-link> |
+  <router-link to="/signup">Signup</router-link> |
+  <router-link to="/forgot-password">Forgot Password</router-link> |
   <router-link to="/">Home</router-link> |
   <router-link to="/about">About</router-link> |
   <router-link to="/contact">Contact</router-link> |
   <router-link to="/not-exist">Not Exist</router-link>
-  <router-view></router-view>
+  <router-view></router-view> -->
+
+  <ParentComponent></ParentComponent>
+
+  <ClassBindingDemo></ClassBindingDemo>
 </template>
 
 <style scoped>
