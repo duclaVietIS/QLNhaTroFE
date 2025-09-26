@@ -6,7 +6,7 @@ import Todo from './components/Todo.vue'
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -14,11 +14,17 @@ import Todo from './components/Todo.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <h1>Hello Vite + Vue!</h1>
+  <h1>Hello Vite + Vue!</h1> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <!-- <Home />
   <Interpolation /> -->
-  <Todo />
+  <!-- <Todo /> -->
+
+  <router-link to="/">Home</router-link> |
+  <router-link to="/about">About</router-link> |
+  <router-link to="/contact">Contact</router-link> |
+  <router-link to="/not-exist">Not Exist</router-link>
+  <router-view></router-view>
 </template>
 
 <style scoped>
@@ -28,9 +34,11 @@ import Todo from './components/Todo.vue'
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
