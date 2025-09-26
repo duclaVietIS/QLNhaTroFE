@@ -1,4 +1,5 @@
 # Vue 3 + Vite
+```text
 QLNhaTroFE/
 │
 ├── node_modules/               # 📦 Thư viện cài bằng npm
@@ -40,4 +41,4 @@ QLNhaTroFE/
 ├── package.json                # 📦 Config project, dependency
 ├── vite.config.js              # ⚙️ Config Vite
 └── README.md
-
+```
